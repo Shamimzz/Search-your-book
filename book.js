@@ -1,6 +1,4 @@
-
-
-// Declare all the variable .
+// Declare all the variable ............
 const inputFeild = document.getElementById('search-feild');
 const button = document.getElementById('button');
 const searchResult = document.getElementById('search-result');
@@ -8,7 +6,7 @@ const errorText = document.getElementById('error');
 const bookContainer = document.getElementById('book-container');
 
 
-// search button click
+// search button click...............
 button.addEventListener('click', searchBook = () => {
     const searchText = inputFeild.value;
     inputFeild.value = ''
@@ -54,7 +52,7 @@ const showBook = books => {
         Search result found: <span>${book.length}</span> of <span>${numFound}</span>
         
         `
-        // Handaling undefined
+        // Handaling undefined.........
         if (!details.author_name) {
             details.author_name='sorry! Author name not found'
         }
@@ -64,7 +62,8 @@ const showBook = books => {
         if (!details.publisher) {
             details.publisher='sorry! publisher not found'
         }
-        // show book
+
+        // show book...............
         const imageUrl = `https://covers.openlibrary.org/b/id/${details.cover_i}-M.jpg`
         const div = document.createElement('div');
         div.classList.add('col');
