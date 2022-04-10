@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assinment-6 || Book Aechrive</title>
+
+
+    <!-- Bootstrap css link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <!-- custom css -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,200&display=swap');
+        body{
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+        }
+        h2, h3{
+            font-weight: 700;
+        }
+        h1{
+            font-weight: 900;
+        }
+        #inputFeild{
+            box-shadow: 2px 5px 7px 5px hsla(47, 8%, 78%, 0.51);
+            padding: 30px;
+        }
+ </style>
+
+</head>
+<body>
+
+<h1 class="text-center my-3 bg-info text-white m-5 rounded py-5">Book Store</h1>
+
+<section>
+    <div class="container">
+        <div class="container bg-light mt-5">
+            <!-- Input search and button -->
+            <div class="input-group mb-3 py-3" id="inputFeild">
+                <input type="text" class="form-control fs-5 p-3 w-50" placeholder="Search your book e.g 'java' "
+                    aria-label="Recipient's username" aria-describedby="button" id="search-feild">
+                <button class="btn btn-info px-5" type="button" id="button">Search</button>
+            </div>
+    
+            <!-- Spinner -->
+            <div class="text-center">
+                <div id="spinner" class="spinner-border d-none" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+            </div>
+    
+            <!-- search result number show -->
+            <h2 id="search-result" class="text-success"> </h2>
+    
+            <!-- error -->
+            <h2 class="text-center m-5 bg-danger mx-auto p-5 rounded-3 d-none text-dark" id="error"></h2>
+    
+            <!-- Book  -->
+            <div class="row row-cols-1 row-cols-md-4 g-4 " id="book-container">
+    
+            </div>
+    
+        </div>
+    </div>
+</section>
+
+    <!-- script link -->
+    <script src="./book.js"></script>
+</body>
+
+</html>
